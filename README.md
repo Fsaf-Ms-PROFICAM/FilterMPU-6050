@@ -75,3 +75,5 @@ Sabendo que o eixo Y é responsavel pela parte central do objeto, logo se esolar
     result = (result+base[x])-1000; 
   }// end for soma
 ```
+# License
+MIT <https://opensource.org/licenses/MIT>
