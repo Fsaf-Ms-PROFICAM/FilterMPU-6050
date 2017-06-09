@@ -66,7 +66,9 @@ Sabendo que o eixo Y é responsavel pela parte central do objeto, logo se esolar
   // Atribuindo dados as posições do Array
   for(int i = 0; i < 20; i++){
       
+    GyX=Wire.read()<<8|Wire.read();  //0x43 (GYRO_XOUT_H) & 0x44 (GYRO_XOUT_L)
     GyY=Wire.read()<<8|Wire.read();  //0x45 (GYRO_YOUT_H) & 0x46 (GYRO_YOUT_L)
+    GyZ=Wire.read()<<8|Wire.read();  //0x47 (GYRO_ZOUT_H) & 0x48 (GYRO_ZOUT_L)
     
     base[i] = GyY;
   }
